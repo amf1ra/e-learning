@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma virtual E-learnkex</title>
+    <link rel="shortcut icon" href="Logos/e-learnkex.icns.ico">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="2A.css">
+    <link rel="stylesheet" type="text/css" href="calendario.css" media="all" />
+    <script type="text/javascript" src="calendario.js"></script>
+    <script src="https://kit.fontawesome.com/37263f60d5.js" crossorigin="anonymous"></script>
+  
+</head>
+
+
+
+
+<body>
+    <!--barra de navegacion-->
+      <nav class="navbar navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <img src="Logos/logoconmenosderechos.png" height="83" width="112">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">E-learnkex</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="1A.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="2A.html">Area Personal</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="login_registro.html" id="offcanvasNavbarDropdown"  aria-expanded="false">
+                    Cambiar de cuenta
+                  </a>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Que estas buscando?" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!--barra de navegacion 2-->
+      <div class="container1">
+        <div class="navbar1">
+            <img src="copphu.png" class="logo" alt="Main Logo">
+        
+        <ul>
+            <li><a href="2A.html">Área Principal</a></li>
+            <li><a href="#cursos">Cursos</a></li>
+            <li><a href="#calendario">Calendario</a></li>
+            <li><a href="#">Ver Perfil</a></li>
+        </ul>
+
+        </div>
+    </div>
+
+    <!--Pag cent-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/QYSNI5Y7D5AOBOE6F6LO4UPE3M.jpg" class="d-block w-100" alt="gente en clases">
+          </div>
+          <div class="carousel-item">
+            <img src="https://s7d2.scene7.com/is/image/TWCNews/es_coronavirus_remoteteaching31113582202445png" class="d-block w-100" alt="profesores virtuales">
+          </div>
+          <div class="carousel-item">
+            <img src="https://assets.change.org/photos/7/ar/sr/piarSRNunddyzsw-1600x900-noPad.jpg?1618410758" class="d-block w-100" alt="profesores virtuales">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <a name="cursos"> 
+      <div class="alert alert-light" role="alert">
+        Cursos
+      </div>
+    <!--Contenido de clases-->
+    </a>
+      <div class="card-group">
+        <div class="card">
+          <a href="ADS.html"><img src="https://teorema-rd.com/storage/2020/05/system01-original.png" class="card-img-top" alt="ADS" width="820" height="320">
+          <div class="card-body">
+            <h5 class="card-title">Análisis y Diseño de Sistemas Informáticos</h5>
+            <p class="card-text">4to Informática</p></a>
+        
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Xiomara Rivas</small>
+          </div>
+        </div>
+
+        <div class="card">
+          <a href="csn.html"><img src="https://1.bp.blogspot.com/-crIYTZTsdUg/Xr4MtgnjDZI/AAAAAAAACAY/4i92RZYp6w05CF9GzVZetJBdmATiHflCACLcBGAsYHQ/s1600/20191129-naturaleza.jpg" class="card-img-top" alt="Ciencias Naturaleza" width="820" height="320">
+          <div class="card-body">
+            <h5 class="card-title">Ciencias de la Naturaleza</h5>
+            <p class="card-text">4to Informática</p></a>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Jenny S. de los Santos</small>
+          </div>
+        </div>
+
+        <div class="card">
+          <a href="csso.html"><img src="https://www.caracteristicas.co/wp-content/uploads/2016/09/ciencias-sociales-e1559699616797-800x400.jpg" class="card-img-top" alt="ciencias sociales" width="820" height="320">
+          <div class="card-body">
+            <h5 class="card-title">Ciencias Sociales</h5>
+            <p class="card-text">4to Informática</p></a>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Bartolina Feliz</small>
+          </div>
+        </div>
+      </div>
+      <div class="card-group">
+
+        <div class="card">
+          <a href="portal.html"><img src="https://disenowebakus.net/imagenes/articulos/diseno-de-un-sitio-web.jpg" class="card-img-top" alt="ADS" width="820" height="320">
+          <div class="card-body">
+            <h5 class="card-title">Diseño de Portales Web y Recursos Multimedia</h5>
+            <p class="card-text">4to Informática</p></a>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Karina Salazar</small>
+          </div>
+        </div>
+
+        <div class="card">
+          <a href="bd.html"><img src="https://disenowebakus.net/imagenes/articulos/bases-de-datos.jpg" class="card-img-top" alt="BD" width="820" height="320">
+          <div class="card-body">
+            <h5 class="card-title">Diseño y Desarrollo de Base de Datos</h5>
+            <p class="card-text">4to Informática</p></a>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Elison Pérez</small>
+          </div>
+        </div>
+
+        <div class="card">
+          <a href="edart.html"><img src="https://oceanoeducacion.com/wp-content/uploads/2020/12/P7XH13-1-scaled.jpg" class="card-img-top" alt="ciencias sociales" width="820" height="320">
+          <div class="card-body">
+            <h5 class="card-title">Educación Artística</h5>
+            <p class="card-text">4to Informática</p></a>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Yokelly Castro</small>
+          </div>
+        </div>
+      </div>
+      <div class="card-group">
+
+        <div class="card">
+          <a href="edfi.html"><img src="https://educacion2.com/wp-content/uploads/2019/11/educacion-fisica.png" class="card-img-top" alt="ADS" width="820" height="320">
+          <div class="card-body">
+            <h5 class="card-title">Educación Física</h5>
+            <p class="card-text">4to Informática</p></a>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">José Antonio De Los Santos</small>
+          </div>
+        </div>
+
+        <div class="card">
+          <a href="form.html"><img src=" http://cedapyc.edu.do/aula/courses/FHR0006/course-pic.png" class="card-img-top" alt="Ciencias Naturaleza" width="820" height="320">
+          <div class="card-body">
+            <h5 class="card-title">Formación Humana</h5>
+            <p class="card-text">4to Informática</p></a>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Serafin Romero</small>
+          </div>
+        </div>
+
+        <div class="card">
+          <a href="ingles.html"><img src="https://www.magisnet.com/wp-content/uploads/2020/11/ingle%CC%81s.jpg" class="card-img-top" alt="ciencias sociales" width="820" height="320">
+          <div class="card-body">
+            <h5 class="card-title">Inglés</h5>
+            <p class="card-text">4to Informática</p></a>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Teddy Garcia</small>
+          </div>
+        </div>
+      </div>
+      <div class="card-group">
+        
+        <div class="card">
+          <a href="le.html"><img src="http://www.eltiempo.com/files/image_950_534/files/crop/uploads/2017/04/24/58fe2bdeca58b.r_1525476243864.0-304-2508-1558.jpeg" class="card-img-top" alt="ADS" width="820" height="320">
+          <div class="card-body">
+            <h5 class="card-title">Lengua Española</h5>
+            <p class="card-text">4to Informática</p></a>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Julia Polanco</small>
+          </div>
+        </div>
+
+        <div class="card">
+          <a href="mat.html"><img src="https://d39bmof8blmz8u.cloudfront.net/wp-content/uploads/2022/03/Dia-Internacional-de-las-Matematicas.png" class="card-img-top" alt="Ciencias Naturaleza" width="820" height="320">
+          <div class="card-body">
+            <h5 class="card-title">Matemáticas</h5>
+            <p class="card-text">4to Informática</p></a>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Anthony Brito</small>
+          </div>
+        </div>
+
+        <div class="card">
+          <a href="ofm.html"><img src="https://i0.wp.com/grupocarman.com/blog/wp-content/uploads/2015/10/ofimatica.jpg?fit=1280%2C720&ssl=1" class="card-img-top" alt="ciencias sociales" width="820" height="320">
+          <div class="card-body">
+            <h5 class="card-title">Ofimática</h5>
+            <p class="card-text">4to Informática</p></a>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Xiomara Rivas</small>
+          </div>
+        </div>
+      </div> 
+   <br><br><br>
+
+      <!--Calendario-->
+      <a name="calendario">
+      <div id="calendario">
+        <div id="anterior" onclick="mesantes()"></div>
+        <div id="posterior" onclick="mesdespues()"></div>
+        <h2 id="titulos"></h2>
+        <table id="diasc">
+          <tr id="fila0"><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr>
+          <tr id="fila1"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr id="fila2"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr id="fila3"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr id="fila4"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr id="fila5"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr id="fila6"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        </table>
+        <div id="fechaactual"><i onclick="actualizar()">Hoy es... </i></div>
+        <div id="buscafecha">
+          <form action="#" name="buscar">
+            <p>Mes
+              <select name="buscames">
+                <option value="0">Enero</option>
+                <option value="1">Febrero</option>
+                <option value="2">Marzo</option>
+                <option value="3">Abril</option>
+                <option value="4">Mayo</option>
+                <option value="5">Junio</option>
+                <option value="6">Julio</option>
+                <option value="7">Agosto</option>
+                <option value="8">Septiembre</option>
+                <option value="9">Octubre</option>
+                <option value="10">Noviembre</option>
+                <option value="11">Diciembre</option>
+              </select>
+              Año:
+              <input type="text" name="buscaanno" maxlength="4" size="4" />
+            
+              <input type="button" value="BUSCAR" onclick="mifecha()" />
+            </p>
+          </form>
+        </div>
+      </div>
+      </a>
+
+      <!--footer2-->
+      <footer id="a">
+        <p class="a"> <br>
+          E-learnkex es una de esas plataformas más reconocidas mundialmente con más de 10,000 escuelas con un dominio en esta.
+          <br> <br>
+          No.:#2 - jc18-0032@copphu.unphu.edu.do
+          <br>
+          Ⓒ Josephine Crespo  </p>
+          <a href="https://www.instagram.com/joseph_cres/"><img src="https://icon-library.com/images/facebook-icon-transparent-background/facebook-icon-transparent-background-2.jpg" alt="instagram icono" width="30px"></a>
+          <a href="https://www.facebook.com/Vegetta777paginaoficial?d=%7B%22u%22%3A100006485097720%2C%22f%22%3A1305728356435516%2C%22t%22%3A1653664654%2C%22ed%22%3A[]%7D&s=AWUbYaVAs3xuK1R2M00"> <img src="https://cdn-icons-png.flaticon.com/512/145/145802.png?w=360" alt="facebook icono" width="30px"></a>
+          <a href="https://web.whatsapp.com/"><img src="https://cdn-icons-png.flaticon.com/512/134/134937.png" alt="whatsapp icono" width="30px"></a>
+          
+    </footer>
+</div>
+</body>
+</html>
